@@ -51,71 +51,45 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              Expanded(
+                  child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Más populares',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20),
-                        ),
-                        Text(
-                          'Ver todas',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Container(
-                          height: 180,
-                          width: 120,
-                          decoration: BoxDecoration(
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Ahora en cines',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                              Text(
+                                'Ver todas',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 180,
+                                width: 120,
+                                decoration: BoxDecoration(
 
-                              //imagen
-                              color: Colors.black12),
-                        ),
-                        SizedBox(
-                          width: 8,
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Container(
-                          height: 180,
-                          width: 120,
-                          decoration: BoxDecoration(
-
-                              //imagen
-                              color: Colors.black12),
-                        ),
-                        SizedBox(
-                          width: 8,
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 180,
-                              width: 120,
-                              decoration: BoxDecoration(
-
-                                  //imagen
-                                  color: Colors.black12),
-                            ),
-                            SizedBox(
-                              width: 8,
-                            )
-                          ],
-                        ),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
+                                    //imagen
+                                    color: Colors.black12),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              )
+                            ],
+                          ),
+                          Row(
                             children: [
                               Container(
                                 height: 180,
@@ -128,14 +102,302 @@ class HomeScreen extends StatelessWidget {
                               SizedBox(
                                 width: 8,
                               ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 180,
+                                    width: 120,
+                                    decoration: BoxDecoration(
+
+                                        //imagen
+                                        color: Colors.black12),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  )
+                                ],
+                              ),
+                              SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 180,
+                                      width: 120,
+                                      decoration: BoxDecoration(
+
+                                          //imagen
+                                          color: Colors.black12),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Más populares',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                              Text(
+                                'Ver todas',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
                             ],
                           ),
-                        )
-                      ],
+                          Row(
+                            children: [
+                              Container(
+                                height: 180,
+                                width: 120,
+                                decoration: BoxDecoration(
+
+                                    //imagen
+                                    color: Colors.black12),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 180,
+                                width: 120,
+                                decoration: BoxDecoration(
+
+                                    //imagen
+                                    color: Colors.black12),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 180,
+                                    width: 120,
+                                    decoration: BoxDecoration(
+
+                                        //imagen
+                                        color: Colors.black12),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  )
+                                ],
+                              ),
+                              SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 180,
+                                      width: 120,
+                                      decoration: BoxDecoration(
+
+                                          //imagen
+                                          color: Colors.black12),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Mejor valoradas ',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                              Text(
+                                'Ver todas',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 180,
+                                width: 120,
+                                decoration: BoxDecoration(
+
+                                    //imagen
+                                    color: Colors.black12),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 180,
+                                width: 120,
+                                decoration: BoxDecoration(
+
+                                    //imagen
+                                    color: Colors.black12),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 180,
+                                    width: 120,
+                                    decoration: BoxDecoration(
+
+                                        //imagen
+                                        color: Colors.black12),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  )
+                                ],
+                              ),
+                              SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 180,
+                                      width: 120,
+                                      decoration: BoxDecoration(
+
+                                          //imagen
+                                          color: Colors.black12),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Proximamente',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                              Text(
+                                'Ver todas',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 180,
+                                width: 120,
+                                decoration: BoxDecoration(
+
+                                    //imagen
+                                    color: Colors.black12),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 180,
+                                width: 120,
+                                decoration: BoxDecoration(
+
+                                    //imagen
+                                    color: Colors.black12),
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 180,
+                                    width: 120,
+                                    decoration: BoxDecoration(
+
+                                        //imagen
+                                        color: Colors.black12),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  )
+                                ],
+                              ),
+                              SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 180,
+                                      width: 120,
+                                      decoration: BoxDecoration(
+
+                                          //imagen
+                                          color: Colors.black12),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
-              )
+              ))
             ]),
       ),
     );
