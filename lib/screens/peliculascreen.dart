@@ -30,6 +30,7 @@ class Peliculascreen extends StatelessWidget {
               height: 10,
             ),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   children: [
@@ -43,6 +44,7 @@ class Peliculascreen extends StatelessWidget {
                           color: const Color.fromARGB(31, 19, 19, 19)),
                     ),
                     const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('8,4', style: TextStyle(fontSize: 22)),
                         SizedBox(
@@ -59,6 +61,45 @@ class Peliculascreen extends StatelessWidget {
                       ],
                     )
                   ],
+                ),
+                const Expanded(
+                    child: const Column(
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.nature),
+                        SizedBox(
+                          width: 10,
+                        ),
+                      ],
+                    ),
+                    Text(
+                      'Duracion: ',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Text(
+                      'Año: ',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Text(
+                      'Generos: ',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ],
+                ))
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Column(
+              children: [
+                Text('Sinopsis',
+                    style:
+                        TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+                Text(
+                  'El atardecer es un momento mágico del día. Cuando el sol comienza a descender, el cielo se pinta de tonos cálidos: naranjas, rosas y lilas se mezclan en un espectáculo de colores. Los pájaros regresan a sus nidos, y el aire se llena de una calma especial. Es un instante perfecto para reflexionar y disfrutar de la belleza que nos rodea, recordándonos que cada día trae su propio final y la promesa de un nuevo amanecer.',
+                  style: TextStyle(fontSize: 20),
                 )
               ],
             )
