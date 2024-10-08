@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:peliculas_app/screens/homescreen.dart';
 
 class Buscarwidget extends StatelessWidget {
   const Buscarwidget({super.key});
