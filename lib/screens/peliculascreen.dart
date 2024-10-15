@@ -8,9 +8,9 @@ class Peliculascreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBarHome(),
-      body: Padding(
+      body: Padding (
         padding: const EdgeInsets.all(8.0),
-        child: Column(
+        child:  Column (
           children: [
             const Center(
               child: Column(
@@ -33,6 +33,7 @@ class Peliculascreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       margin: const EdgeInsets.only(right: 8),
@@ -44,7 +45,7 @@ class Peliculascreen extends StatelessWidget {
                           color: const Color.fromARGB(31, 19, 19, 19)),
                     ),
                     const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('8,4', style: TextStyle(fontSize: 22)),
                         SizedBox(
@@ -64,6 +65,7 @@ class Peliculascreen extends StatelessWidget {
                 ),
                 const Expanded(
                     child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -71,18 +73,26 @@ class Peliculascreen extends StatelessWidget {
                         SizedBox(
                           width: 10,
                         ),
+                        Icon(Icons.access_alarm),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Icon(Icons.baby_changing_station),
+                        SizedBox(
+                          width: 10,
+                        ),
                       ],
                     ),
                     Text(
-                      'Duracion: ',
+                      'Duracion: 90 min',
                       style: TextStyle(fontSize: 25),
                     ),
                     Text(
-                      'Año: ',
+                      'Año: 2024',
                       style: TextStyle(fontSize: 25),
                     ),
                     Text(
-                      'Generos: ',
+                      'Generos: si',
                       style: TextStyle(fontSize: 25),
                     ),
                   ],
@@ -92,7 +102,8 @@ class Peliculascreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Column(
+            const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Sinopsis',
                     style:
