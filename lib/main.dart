@@ -37,6 +37,17 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Peliculascreen(),
+      return MultiProvider(
+        providers:[
+          ChangeNotifierProvider(create: (_) =>PeliculasProvider())
+
+        ],
+        routes{
+           'peliculascreen': (context)=>const PeliculaScreen(),
+        }
+        
+
+      ),
     );
   }
 }
